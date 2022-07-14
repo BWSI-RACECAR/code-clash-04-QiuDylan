@@ -28,8 +28,8 @@ class Solution:
         # type input: string
         # return: bool
         if len(set(input)) < len(input):
-            return True
-        return False      
+            return False
+        return True      
 
             
         # TODO: Write code below to return a bool with the solution to the prompt
