@@ -27,7 +27,9 @@ class Solution:
     def validateName(self,input):
         # type input: string
         # return: bool
-        return any(c1 == c2 for c1, c2 in zip(input, input[1:]))
+        if len(set(input)) < len(input):
+            return True
+        return False      
 
             
         # TODO: Write code below to return a bool with the solution to the prompt
